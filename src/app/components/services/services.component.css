@@ -1,0 +1,11 @@
+#servicesContent {
+    position: absolute;
+    top: 0; bottom: 0; left: 25%; right: 0;
+    margin: auto;
+	width: 70%;
+	height: 90%;
+    border: 1px solid #66ff00;	
+	font-family: 'Merriweather', Georgia, 'Times New Roman';
+	background-color: rgb(94, 94, 94);
+	
+}

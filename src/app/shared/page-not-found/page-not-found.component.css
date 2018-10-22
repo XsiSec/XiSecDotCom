@@ -1,0 +1,12 @@
+.pageNotFound-content {
+padding-left: 100px;
+  padding-top: 150px;
+  font-family: 'courier';
+  font-size: 14px;
+  color: white;
+  line-height: 16px;
+}
+
+p {
+  padding: 20px
+}

@@ -1,0 +1,334 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+  .wrapper {
+    margin:0;
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-gap: 0px;
+    grid-auto-rows:auto;
+    font-family:'Courier New', Courier, monospace;
+    
+    /* grid-template-columns: repeat(2, 138.8px); */
+    /* grid-template-rows: repeat(2,175px); */
+    
+    
+  }
+  
+  .box {
+    background-color: #444;
+    color: #ffffff;
+    border-radius: 0px;
+  }
+  
+  .item1 {
+    grid-column: 1 / 5;
+  }
+  
+  .item2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+  }
+  
+  .item3 {
+    grid-column: 3 / 5;
+  }
+
+li{
+    line-height: 5px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+h3{
+    font-size: 16px;
+}
+
+.skills-bar-container {
+    position: relative;
+    width: 100%;
+    /* min-width: 350px; */
+    list-style: none;
+}
+
+.skills-bar-container li {
+    background: #666666;
+    position: relative;
+    width: 200px;
+    height: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+}
+
+.skills-bar-container label {
+    color: #fff;
+    font-size: 12px;
+}
+
+.progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* Software Testing */
+#progress-uat {
+    -webkit-animation-name: progress-uat;
+    animation-name: progress-uat;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressUAT {
+    background-color: rgb(21, 255, 0);
+}
+@keyframes progress-uat {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+
+#progress-fat {
+    -webkit-animation-name: progress-fat;
+    animation-name: progress-fat;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressFAT {
+    background-color: rgb(255, 0, 0);
+}
+@keyframes progress-fat {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+#progress-pen {
+    -webkit-animation-name: progress-pen;
+    animation-name: progress-pen;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressPEN {
+    background-color: rgb(0, 183, 255);
+}
+@keyframes progress-pen {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
+
+/* Programing */
+
+#progress-java {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressJAVA {
+    background-color: rgb(251, 255, 0);
+}
+
+@keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+#progress-csharp {
+    -webkit-animation-name: progress-csharp;
+    animation-name: progress-csharp;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.progressCSHARP {
+    background-color: rgb(255, 153, 0);
+}
+@keyframes progress-csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+#progress-dotNet {
+    -webkit-animation-name: progress-dotNet;
+    animation-name: progress-dotNet;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.progressDOTNET {
+    background-color: rgb(255, 0, 221);
+}
+
+@keyframes progress-dotNet {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+#progress-python {
+    -webkit-animation-name: progress-python;
+    animation-name: progress-python;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressPYTHON {
+    background-color: rgb(0, 59, 18);
+}
+@keyframes progress-python {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+#progress-sql {
+    -webkit-animation-name: progress-sql;
+    animation-name: progress-sql;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.progressSQL {
+    background-color: rgb(251, 255, 0);
+}
+@keyframes progress-sql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+#progress-vb {
+    -webkit-animation-name: progress-vb;
+    animation-name: progress-vb;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressVISUALBASIC {
+    background-color: rgb(0, 4, 255);
+}
+@keyframes progress-vb {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+/* Web Development */
+
+#progress-html {
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressHTML {
+    background-color: rgb(0, 255, 149);
+}
+@keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+#progress-js {
+    -webkit-animation-name: progress-js;
+    animation-name: progress-js;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressJAVASCRIPT {
+    background-color: rgb(255, 81, 0);
+}
+@keyframes progress-js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+#progress-php {
+    -webkit-animation-name: progress-php;
+    animation-name: progress-php;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressPHP {
+    background-color: rgb(187, 255, 0);
+}
+@keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+#progress-as {
+    -webkit-animation-name: progress-as;
+    animation-name: progress-as;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.progressACTIONSCRIPT {
+    background-color: rgb(255, 0, 242);
+}
+@keyframes progress-as {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.progressblue {
+    background-color: rgb(9, 255, 0);
+}
+

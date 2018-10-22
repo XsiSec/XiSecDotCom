@@ -1,0 +1,45 @@
+.postlist-content {
+/* 
+  display: grid;
+  grid-template-columns: repeat(minmax(300px, 1fr));
+  grid-template-rows: 1; */
+  height: 350px;
+}
+  mat-card {
+    margin: 0% 0% 0% 0%;
+    max-width: 100%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    
+  }
+  img{
+      width: 100%;
+  }
+  
+  .postlist-content {
+    
+    border: 1px solid #66ff00;
+    background-color: rgba(0, 0, 0, 0.473);
+    font-family: 'courier';
+    font-size: 14px;
+    overflow: scroll;
+    
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #66ff0063;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #66ff0063;
+}

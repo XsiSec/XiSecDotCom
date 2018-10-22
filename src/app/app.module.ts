@@ -1,42 +1,54 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire//storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+
 import { AppComponent } from './app.component';
-import { BackgroundComponent } from './components/background/background.component';
-import { LoaderComponent } from './components/loader/loader.component';
-import { MainMenuComponent } from './components/main-menu/main-menu.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { GitHubComponent } from './components/github/github.component';
-import { ServicesComponent } from './components/services/services.component';
-import { HomeComponent } from './components/home/home.component';
-declare var particlesJS: any;
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
+import { PostsModule } from './posts/posts.module';
+import { Rand0msModule } from './rand0m/rand0ms.module';
+import { HomeComponent } from './shared/home/home.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { AboutComponent } from './shared/about/about.component';
+import { ContactComponent } from './shared/contact/contact.component';
 
 
-const appRoutes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'github', component: GitHubComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'services', component: ServicesComponent},
-  {path: '**', component:PageNotFoundComponent}
+
+const routes: Routes = [
+  { path: 'home', component: HomeComponent},
+  { path: 'about', component: AboutComponent},
+  { path: 'contact', component: ContactComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent}
+  // { path: 'blog/posts/', loadChildren: './posts/posts.module#PostsModule' },
+
 ];
-
 @NgModule({
   declarations: [
-    BackgroundComponent,
-    AppComponent,
-    MainMenuComponent,
-    ContactComponent,
-    GitHubComponent,
-    PageNotFoundComponent,
-    HomeComponent,
-    ServicesComponent,
-    LoaderComponent
-    
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    FlexLayoutModule,
+    CoreModule,
+    SharedModule,
+    PostsModule,
+    Rand0msModule
   ],
   providers: [],
   bootstrap: [AppComponent]

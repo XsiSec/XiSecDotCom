@@ -1,0 +1,19 @@
+section {
+
+ 
+  height: 350px;
+  border: 1px solid #66ff00;
+  background-color: rgba(0, 0, 0, 0.473);
+  font-family: 'courier';
+  font-size: 14px;
+  overflow: scroll;
+
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}

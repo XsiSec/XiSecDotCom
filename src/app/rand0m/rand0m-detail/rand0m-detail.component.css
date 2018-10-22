@@ -1,0 +1,49 @@
+mat-card {
+  
+  background-color: rgba(116, 116, 116, 0);
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+
+.btnSave {
+  border: none;
+  top: 0px;
+  bottom: 330px;
+  left: 500px;
+  right: 0px;
+  margin: auto;
+  font-size: 16px;
+  transition: 0.3s;
+  /* background-color: rgba(255, 255, 255, 0.096); */
+}
+
+.btnSave:hover {
+  background-color: #3e8e41;
+  color: yellow;
+}
+
+.btnCancel {
+  border: none;
+  top: 0px;
+  bottom: 330px;
+  left: 500px;
+  right: 0px;
+  margin: auto;
+  font-size: 16px;
+  transition: 0.3s;
+  /* background-color: rgba(255, 255, 255, 0.096); */
+}
+
+.btnCancel:hover {
+  background-color: #3e8e41;
+  color: red;
+}

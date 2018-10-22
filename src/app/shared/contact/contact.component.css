@@ -1,0 +1,41 @@
+#Contact-content {
+  
+  font-family: 'courier';
+  font-size: 14px;
+}
+
+.textarea {
+  position: relative;
+  top: 30px;
+  left:15px;
+  width: 520px;
+  height: 230px;
+  
+}
+
+
+.yourName {
+  position: relative;
+  top: 10px;
+  bottom: 300px;
+  left: 15px;
+  height: 20px;
+}
+
+.yourEmail {
+  position: relative;
+  top: 20px;
+  bottom: 300px;
+  left: 15px;
+  height: 20px;
+}
+
+input {
+  width: 520px;
+}
+
+.mySubmit {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
